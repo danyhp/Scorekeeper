@@ -1,8 +1,7 @@
 package com.mmithb.danyhp.scorekeeper;
 
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -32,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the TextViews by ID
-        mScoreText1 = (TextView) findViewById(R.id.score_1);
-        mScoreText2 = (TextView) findViewById(R.id.score_2);
+        mScoreText1 = findViewById(R.id.score_1);
+        mScoreText2 = findViewById(R.id.score_2);
 
         if (savedInstanceState != null) {
             mScore1 = savedInstanceState.getInt(STATE_SCORE1);
